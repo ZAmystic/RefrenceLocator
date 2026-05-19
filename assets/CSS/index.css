@@ -12,7 +12,7 @@ body {
 }
 
 .upload-wrapper {
-  max-width: 900px;
+  max-width: 65%;
   margin: auto;
   background: #fff;
   padding: 0px 30px 30px 30px;
@@ -99,6 +99,29 @@ h1 {
   border-radius: 8px;
 }
 
+/* Responsive layout for smaller screens */
+@media (max-width: 1200px) {
+  .info-section {
+    flex-direction: column;   /* Stack boxes vertically */
+  }
+
+  .info-box {
+    max-width: 100%;              /* Ensure full width */
+  }
+
+  
+.upload-wrapper {
+  max-width: 65%;
+  margin: auto;
+  background: #fff;
+  padding: 0px 30px 30px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  margin-bottom: 60px;
+}
+}
+
+
 .info-box h3 {
   margin-top: -10px;
   font-size: 20px;
@@ -127,15 +150,20 @@ h1 {
 }
 
 .footer {
+  position: fixed;       /* Fixes the footer in place */
+  bottom: 0;             /* Anchors it to the bottom of the viewport */
+  left: 0;               /* Ensures it spans from the left edge */
+  width: 100%;           /* Makes it stretch across the screen */
   display: flex;
   justify-content: center;
   text-align: center;
   margin-top: 40px;
   color: #ffffff;
   font-size: 12px;
-  padding: 10px 0px 10px 0px;
-  background-image: linear-gradient(rgb(131, 32, 25),rgb(58, 9, 6));
+  padding: 10px 0px;
+  background-image: linear-gradient(rgb(131, 32, 25), rgb(58, 9, 6));
 }
+
 
 .footer p {
   margin: 0;
